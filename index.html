@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practice</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- for generating a structure -->
+    <!--  -->
+<div class="main">
+    <h1>Creating Tags in html by javascript DOM method</h1>
+    <br>
+    <button onclick="para()" id="btn">
+      For Creating <strong>Paragraph Tag</strong>
+    </button>
+    <br>
+    <br>
+    <button onclick="anchor()" id="btn">
+        For Creating <strong>Anchor Tag</strong>
+      </button>
+    <br>
+    <br>
+    <button onclick="button()" id="btn">
+        For Creating <strong>Button Tag</strong>
+      </button>
+    <br>
+    <br>
+    <button onclick="table()" id="btn">
+        For Creating <strong>Table Tag</strong>
+      </button>
+    <br>
+    <br>
+    <button onclick="list()" id="btn">
+      For Creating <strong>List Tag</strong>
+    </button>
+    <br>
+    <br>
+    <button onclick="head1()" id="btn">
+        For Creating <strong>ul Tag</strong>
+      </button>
+    <br>
+    <br>
+    <button onclick="mainhead()" id="btn">
+        For Creating <strong>h1 Tag</strong>
+      </button>
+    
+</div>
+    <!--  -->
+    <!--for generating onclick function -->
+    <!-- Javasript begins -->
+    <script>
+      alert("Plaease Find Your Tags In Console")
+      alert("for Seeing your Tag kindly Pess F12")
+      function para() {
+        var para = document.createElement("p");
+        console.log(para);
+        var para = document.createTextNode("This is Paragraph Tag");
+        console.log(para);
+      }
+      function mainhead() {
+        var head = document.createElement("h1");
+        console.log(head);
+        var mainhead = document.createTextNode("This is h1 Tag");
+        console.log(mainhead);
+      }
+      function head1() {
+        var head1 = document.createElement("ul");
+        console.log(head1);
+        var head1 = document.createTextNode("This is Un-order List Tag");
+        console.log(head1);
+      }
+      function button() {
+        var button = document.createElement("button");
+        console.log(button);
+        var button = document.createTextNode("This is Button Tag");
+        console.log(button);
+      }
+      function list() {
+        var list = document.createElement("li");
+        console.log(list);
+        var list = document.createTextNode("This is List Tag");
+        console.log(list);
+      }
+      function anchor() {
+        var anchor = document.createElement("a");
+        console.log(anchor);
+        var anchor = document.createTextNode("This is Anchor Tag");
+        console.log(anchor);
+      }
+      function table() {
+        var table = document.createElement("table");
+        console.log(table);
+        var table = document.createTextNode("This is Table Tag");
+        console.log(table);
+      }
+    </script>
+  </body>
+</html>
